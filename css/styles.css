@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #F4EEDF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+
+/* Header */
+
+header {
+  position: relative;
+  height: 690px;
+  background-image: url(../img/bilde1.png);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.left-arrow {
+  position: relative;
+  float: left;
+  clear: both;
+}
+
+.header-brand {
+  position: relative;
+  float: left;
+}
+
+.right-arrow {
+  position: relative;
+  float: right;
+  clear: both;
+}
+
+.slider-navigation ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.slider-navigation ul li {
+
+}
+
+header h1 {
+  margin-top: 0;
+
+}
+
+
+/* Navigation */
+
+nav {
+  position: relative;
+  height: 90px;
+  padding: 0;
+  background-color: #473a2d;
+  color: #fff;
+}
+
+nav img {
+  float: left;
+  padding: 25px 0 0 50px;
+}
+
+nav ul {
+  float: right;
+  padding: 14px 20px;
+  margin: 20px auto;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -1px;
+  padding: 14px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #5B4D3B;
+}
+
+/* Main nav*/
+.navbar {
+  float: left;
+  width: 85%;
+}
+
+.navbar ul {
+  border-right: 1px solid #fff;
+}
+
+/* Language nav */
+.lang {
+  float: right;
+  width: 15%;
+}
+
+.lang ul {
+  float: left;
+}
+
+.lang ul li a {
+  padding: 14px 5px;
+}
+
+.container {
+  width: 1294px;
+}
