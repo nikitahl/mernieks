@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
+
 body {
-  width: 100%;
   background-color: #F4EEDF;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -12,111 +12,244 @@ body {
 }
 
 
+.container {
+  width: 1294px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+
+.clearfix::after {
+  content: '  ';
+  display: table;
+  float: none;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+
 /* Header */
+
 
 header {
   position: relative;
   height: 690px;
-  background-image: url(../img/bilde1.png);
-  background-repeat: none;
-  background-position: center;
+  background: url(../img/bilde1.png) no-repeat center;
   background-size: cover;
-}
-
-.left-arrow {
-  position: relative;
-  float: left;
-  clear: both;
-}
-
-.header-brand {
-  position: relative;
-  float: left;
-}
-
-.right-arrow {
-  position: relative;
-  float: right;
-  clear: both;
-}
-
-.slider-navigation ul {
-  list-style-type: disc;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.slider-navigation ul li {
-
-}
-
-header h1 {
-  margin-top: 0;
-
 }
 
 
 /* Navigation */
 
-nav {
-  position: relative;
-  height: 90px;
-  padding: 0;
+
+.navbar {
   background-color: #473a2d;
   color: #fff;
 }
 
-nav img {
+
+/* Main nav*/
+
+
+.logo {
+  position: relative;
+  padding: 0;
+  top: 10px;
+}
+
+
+.main-nav {
+  width: 93%;
   float: left;
-  padding: 25px 0 0 50px;
+  padding: 22px 25px 22px 0;
 }
 
-nav ul {
-  float: right;
-  padding: 14px 20px;
-  margin: 20px auto;
-}
 
-nav ul li {
+.main-nav-links {
   display: inline-block;
-  list-style: none;
+  float: right;
+  border-right: 1px solid #fff;
+  padding: 0 20px 0 0;
 }
 
-nav ul li a {
+
+.main-nav-links a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
-  letter-spacing: -1px;
-  padding: 14px 20px;
+  padding: 20px;
+  vertical-align: middle;
 }
 
-nav ul li a:hover {
+
+.main-nav-links a:hover {
   background-color: #5B4D3B;
 }
 
-/* Main nav*/
-.navbar {
-  float: left;
-  width: 85%;
-}
-
-.navbar ul {
-  border-right: 1px solid #fff;
-}
 
 /* Language nav */
-.lang {
+
+
+.lang-nav {
+  width: 7%;
   float: right;
-  width: 15%;
+  padding: 22px 0;
 }
 
-.lang ul {
+
+.lang-nav-links {
+  display: inline-block;
+  padding: 0;
+}
+
+
+.lang-nav-links a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 5px;
+  vertical-align: middle;
+}
+
+
+.lang-nav-links a:hover {
+  background-color: #5B4D3B;
+}
+
+
+/* Header main section */
+
+
+.header-brand h1, .header-brand p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+
+.header-content {
+  position: relative;
+  top: 250px;
+}
+
+
+.left-arrow, .right-arrow, .header-brand {
+  display: inline-block;
+}
+
+
+.arrow {
+  opacity: 0.3;
+}
+
+
+.right-arrow {
+  float: right;
+}
+
+
+.left-arrow {
   float: left;
 }
 
-.lang ul li a {
-  padding: 14px 5px;
+
+.header-brand {
+  float: left;
+  padding: 0 0 0 50px;
+  width: 360px;
 }
 
-.container {
-  width: 1294px;
+
+.right-arrow, .left-arrow {
+  position: relative;
+  top: 30px;
+}
+
+
+/* Slider navigation thumbnails */
+.nav-thumbs {
+  position: absolute;
+  clear:both;
+  bottom:15px;
+  left:42%;
+}
+
+
+.nav-thumbs ul {
+  list-style-type: none;
+}
+
+
+.nav-thumbs ul li {
+  float:left;
+  margin-top:20px;
+}
+
+
+.nav-thumbs ul li a {
+    box-sizing: content-box;
+    display:block;
+    width:10px;
+    height:10px;
+    float: left;
+    margin:0 5px;
+    background-color: #AF926D;
+    text-indent: -9999px;
+    border: 2px solid #AF926D;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+
+.nav-thumbs ul li a:hover, .nav-thumbs ul li a.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Common classes */
+
+
+.section-heading {
+  font-weight: normal;
+  color: #91752C;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px dashed #000;
+  padding: 0 0 10px 0;
+}
+
+
+.col-3 {
+  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+
+/* Services */
+
+
+.services h3 {
+  font-weight: normal;
+  color: #473A15;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+.services ul {
+  list-style: none;
+  line-height: 1.5;
+  color: #534C38;
+  padding: 0 20px 0 0;
 }

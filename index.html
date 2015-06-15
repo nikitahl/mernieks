@@ -8,81 +8,95 @@
   <body>
 
     <!-- Header -->
-    <header class="container">
+    <header>
       <!-- Navigation -->
+      <div class="navbar"> <!-- Sets background-color, color -->
+        <div class="container clearfix"> <!-- Sets content width, adds clearfix after navigation -->
+          <nav class="main-nav">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Mernieks logotips" style="width:179px; height:55px" /></a>
+            <div class="main-nav-links">
+              <a href="index.html">Sākums</a>
+              <a href="#services">Pakalpojumi</a>
+              <a href="#about">Par mums</a>
+              <a href="#clients">Klienti</a>
+              <a href="#contacts">Kontakti</a>
+            </div>
+          </nav>
+          <nav class="lang-nav">
+            <div class="lang-nav-links">
+              <a href="#">RU</a>
+              <a href="#">EN</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Navigation end -->
+      <!-- Slider -->
+      <div class="container clearfix header-content">
+        <div class="left-arrow">
+          <a href="#"><img src="img/leftarrow.png" class="arrow" alt="Left" style="width: 80%"/></a>
+        </div>
+        <div class="header-brand">
+          <h1>Mērniecība</h1>
+          <br />
+          <p>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai</p>
+        </div>
+        <div class="right-arrow">
+          <a href="#"><img src="img/rightarrow.png" class="arrow" alt="Right" style="width: 80%"/></a>
+        </div>
+      </div>
       <div class="container">
-        <nav class="navbar">
-          <img src="img/logo.png" alt="Mernieks" />
+        <div class="nav-thumbs">
           <ul>
-            <li><a href="index.html">Sākums</a></li>
-            <li><a href="#services">Pakalpojumi</a></li>
-            <li><a href="#about">Par mums</a></li>
-            <li><a href="#clients">Klienti</a></li>
-            <li><a href="#contacts">Kontakti</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#" class="active">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
-        </nav>
-        <nav class="lang">
-          <ul>
-            <li><a href="#">RU</a></li>
-            <li><a href="#">EN</a></li>
-          </ul>
-        </nav>
-      </div><!-- Navigation -->
-      <div class="left-arrow">
-        <img src="img/leftarrow.png" alt="Left" />
+        </div>
       </div>
-      <div class="header-brand">
-        <h1>Mērniecība</h1>
-        <p>Zemes gabalu robezu uzmerisana zemes un buvju registracijai</p>
-      </div>
-      <div class="right-arrow">
-        <img src="img/rightarrow.png" alt="Right" />
-      </div>
-      <div class="slider-navigation">
-        <!-- <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul> -->
-      </div>
-    </header><!-- Header -->
+      <!-- Slider end -->
+    </header>
+    <!-- Header end -->
 
     <!-- Pakalpojumi -->
-    <section id="services">
-      <h2>Pakalpojumi</h2>
-      <div class="">
-        <img src="img/geodezija.png" alt="Ģeodēzija" />
-        <h3>Ģeodēzija</h3>
-        <ul>
-          <li>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</li>
-          <li>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</li>
-          <li>Situācijas uzmērīšana;</li>
-          <li>Būvasu nospraušana;</li>
-          <li>Konstrukciju novietojuma pārbaude.</li>
-        </ul>
+    <section id="services" class="container clearfix">
+      <h2 class="section-heading">Pakalpojumi</h2>
+      <div class="row">
+        <div class="col-3 services">
+          <img src="img/geodezija.png" alt="Ģeodēzija" />
+          <h3>Ģeodēzija</h3>
+          <ul>
+            <li>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</li>
+            <li>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</li>
+            <li>Situācijas uzmērīšana;</li>
+            <li>Būvasu nospraušana;</li>
+            <li>Konstrukciju novietojuma pārbaude.</li>
+          </ul>
+        </div>
+        <div class="col-3 services">
+          <img src="img/mernieciba.png" alt="Mērniecība" />
+          <h3>Mērniecība</h3>
+          <ul>
+            <li>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</li>
+            <li>Zemesgabalu robežu noteikšana dabā;</li>
+            <li>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</li>
+            <li>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.</li>
+            <li>Meža transformējamo platību uzmērīšana;</li>
+            <li>Robežstigu un vizūru noteikšana;</li>
+            <li>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</li>
+          </ul>
+        </div>
+        <div class="col-3 services">
+          <img src="img/zemesiericiba.png" alt="Zemes ierīcība" />
+          <h3>Zemes ierīcība</h3>
+          <ul>
+            <li>Zemes ierīcības projektu izstrāde;</li>
+            <li>Zemes ierīcības projektu saskaņošana.</li>
+          </ul>
+        </div>
       </div>
-      <div class="">
-        <img src="img/mernieciba.png" alt="Mērniecība" />
-        <h3>Mērniecība</h3>
-        <ul>
-          <li>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</li>
-          <li>Zemesgabalu robežu noteikšana dabā;</li>
-          <li>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</li>
-          <li>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.</li>
-          <li>Meža transformējamo platību uzmērīšana;</li>
-          <li>Robežstigu un vizūru noteikšana;</li>
-          <li>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</li>
-        </ul>
-      </div>
-      <div class="">
-        <img src="img/zemesiericiba.png" alt="Zemes ierīcība" />
-        <h3>Zemes ierīcība</h3>
-        <ul>
-          <li>Zemes ierīcības projektu izstrāde;</li>
-          <li>Zemes ierīcības projektu saskaņošana.</li>
-        </ul>
-      </div>
-    </section><!-- Pakalpojumi -->
+    </section>
+    <!-- Pakalpojumi end -->
 
     <!-- Pakalpojumu izcenojumi -->
     <section>
