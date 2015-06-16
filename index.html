@@ -12,20 +12,22 @@
       <!-- Navigation -->
       <div class="navbar"> <!-- Sets background-color, color -->
         <div class="container clearfix"> <!-- Sets content width, adds clearfix after navigation -->
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Mernieks logotips" style="width:179px; height:55px" /></a>
+          </div>
+          <nav class="lang-nav">
+            <div class="lang-nav-links">
+              <a href="#">RU</a>
+              <a href="#">EN</a>
+            </div>
+          </nav>
           <nav class="main-nav">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt="Mernieks logotips" style="width:179px; height:55px" /></a>
             <div class="main-nav-links">
               <a href="index.html">Sākums</a>
               <a href="#services">Pakalpojumi</a>
               <a href="#about">Par mums</a>
               <a href="#clients">Klienti</a>
               <a href="#contacts">Kontakti</a>
-            </div>
-          </nav>
-          <nav class="lang-nav">
-            <div class="lang-nav-links">
-              <a href="#">RU</a>
-              <a href="#">EN</a>
             </div>
           </nav>
         </div>
@@ -62,110 +64,122 @@
     <section id="services" class="container clearfix">
       <h2 class="section-heading">Pakalpojumi</h2>
       <div class="row">
-        <div class="col-3 services">
-          <img src="img/geodezija.png" alt="Ģeodēzija" />
-          <h3>Ģeodēzija</h3>
-          <ul>
-            <li>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</li>
-            <li>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</li>
-            <li>Situācijas uzmērīšana;</li>
-            <li>Būvasu nospraušana;</li>
-            <li>Konstrukciju novietojuma pārbaude.</li>
-          </ul>
+        <div class="cols services">
+          <div class="services-image">
+            <img src="img/geodezija.png" alt="Ģeodēzija" />
+          </div>
+          <div class="services-list">
+            <h3>Ģeodēzija</h3>
+            <ul>
+              <li>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</li>
+              <li>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</li>
+              <li>Situācijas uzmērīšana;</li>
+              <li>Būvasu nospraušana;</li>
+              <li>Konstrukciju novietojuma pārbaude.</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-3 services">
-          <img src="img/mernieciba.png" alt="Mērniecība" />
-          <h3>Mērniecība</h3>
-          <ul>
-            <li>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</li>
-            <li>Zemesgabalu robežu noteikšana dabā;</li>
-            <li>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</li>
-            <li>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.</li>
-            <li>Meža transformējamo platību uzmērīšana;</li>
-            <li>Robežstigu un vizūru noteikšana;</li>
-            <li>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</li>
-          </ul>
+        <div class="cols services">
+          <div class="services-image">
+            <img src="img/mernieciba.png" alt="Mērniecība" />
+          </div>
+          <div class="services-list">
+            <h3>Mērniecība</h3>
+            <ul>
+              <li>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</li>
+              <li>Zemesgabalu robežu noteikšana dabā;</li>
+              <li>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</li>
+              <li>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.</li>
+              <li>Meža transformējamo platību uzmērīšana;</li>
+              <li>Robežstigu un vizūru noteikšana;</li>
+              <li>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-3 services">
-          <img src="img/zemesiericiba.png" alt="Zemes ierīcība" />
-          <h3>Zemes ierīcība</h3>
-          <ul>
-            <li>Zemes ierīcības projektu izstrāde;</li>
-            <li>Zemes ierīcības projektu saskaņošana.</li>
-          </ul>
+        <div class="cols services">
+          <div class="services-image">
+            <img src="img/zemesiericiba.png" alt="Zemes ierīcība" />
+          </div>
+          <div class="services-list">
+            <h3>Zemes ierīcība</h3>
+            <ul>
+              <li>Zemes ierīcības projektu izstrāde;</li>
+              <li>Zemes ierīcības projektu saskaņošana.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <!-- Pakalpojumi end -->
 
     <!-- Pakalpojumu izcenojumi -->
-    <section>
-      <h2>Pakalpojumu izcenojumi</h2>
-      <div class="">
-        <p>Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu sarkano līniju), pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:</p>
-        <table>
-          <thead>
-           <tr>
-             <th>Pakalpojums</th>
-             <th>EUR</th>
-           </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <td>objektos, kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas, tāmei tiek piemērots koeficients 0.8</td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</td>
-              <td>21,34</td>
-            </tr>
-            <tr>
-              <td>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</td>
-              <td>24,19</td>
-            </tr>
-            <tr>
-              <td>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</td>
-              <td>31,30</td>
-            </tr>
-            <tr>
-              <td>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha, bet ne vairāk kā  135.17 EUR kopā par vienu objektu</td>
-              <td>10,67</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="">
-        <p>Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:</p>
-        <table>
-          <thead>
-           <tr>
-             <th>Pakalpojums</th>
-             <th>EUR</th>
-           </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>pie trases garuma līdz 300 m, viens objekts</td>
-              <td>21,34</td>
-            </tr>
-            <tr>
-              <td>pie trases garuma virs 300 m, papildus par katriem nākamajiem 100 m, bet ne vairāk kā 135.17 EUR kopā par vienu objektu</td>
-              <td>24,19</td>
-            </tr>
-            <tr>
-              <td>Par vienreizēju topogrāfiskās informācijas sagatavošanu un izsniegšanu digitālā formā (objekta platība tiek noteikta pa pieprasīto kontūru):</td>
-            </tr>
-            <tr>
-              <td>objekta platība līdz 25ha (ieskaitot), viens objekts</td>
-              <td>2,85</td>
-            </tr>
-            <tr>
-              <td>objekta platība virs 25ha, papildus par katru nākamo ha</td>
-              <td>0,07</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="container clearfix">
+      <h2 class="section-heading">Pakalpojumu izcenojumi</h2>
+      <div class="row services-prices">
+        <div class="cols">
+          <p>Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu sarkano līniju), pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:</p>
+          <table>
+            <thead>
+             <tr>
+               <th>Pakalpojums</th>
+               <th>EUR</th>
+             </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</td>
+                <td>21,34</td>
+              </tr>
+              <tr>
+                <td>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</td>
+                <td>24,19</td>
+              </tr>
+              <tr>
+                <td>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</td>
+                <td>31,30</td>
+              </tr>
+              <tr>
+                <td>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha, bet ne vairāk kā  135.17 EUR kopā par vienu objektu</td>
+                <td>10,67</td>
+              </tr>
+              <tr>
+                <td>objektos, kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas, tāmei tiek piemērots koeficients 0.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cols">
+          <p>Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:</p>
+          <table>
+            <thead>
+             <tr>
+               <th>Pakalpojums</th>
+               <th>EUR</th>
+             </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>pie trases garuma līdz 300 m, viens objekts</td>
+                <td>21,34</td>
+              </tr>
+              <tr>
+                <td>pie trases garuma virs 300 m, papildus par katriem nākamajiem 100 m, bet ne vairāk kā 135.17 EUR kopā par vienu objektu</td>
+                <td>24,19</td>
+              </tr>
+              <tr>
+                <td>Par vienreizēju topogrāfiskās informācijas sagatavošanu un izsniegšanu digitālā formā (objekta platība tiek noteikta pa pieprasīto kontūru):</td>
+              </tr>
+              <tr>
+                <td>objekta platība līdz 25ha (ieskaitot), viens objekts</td>
+                <td>2,85</td>
+              </tr>
+              <tr>
+                <td>objekta platība virs 25ha, papildus par katru nākamo ha</td>
+                <td>0,07</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section><!-- Pakalpojumu izcenojumi -->
 
@@ -210,22 +224,22 @@
     <!-- Klienti -->
     <section id="clients">
       <h2>Klienti</h2>
-      <img src="img/lrzm.png" alt=" Latvijas Republikas Zemkopības ministrija" />
-      <img src="img/lvm.png" alt=" Latvijas Republikas Zemkopības ministrija" />
-      <img src="img/gibson.png" alt="Gibson International" />
-      <img src="img/businessbuilder.png" alt="Business Builder" />
-      <img src="img/balticforestry.png" alt="Baltic Sustainable Forestry" />
-      <img src="img/statoil.png" alt="Statoil" />
-      <img src="img/casamona.png" alt="Casamona" />
-      <img src="img/blueroots.png" alt="Blue Roots" />
-      <img src="img/lvc.png" alt="Latvijas Valsts Celi" />
-      <img src="img/latvenergo.png" alt="Latvenergo" />
-      <img src="img/filterline.png" alt="Filter Line" />
-      <img src="img/lmt.png" alt="LMT" />
-      <img src="img/brivosta.png" alt="Ventspils Brivosta" />
-      <img src="img/ventbunkers.png" alt="Vent Bunkers" />
-      <img src="img/latio.png" alt="Latio" />
-      <img src="img/ventpasvaldiba.png" alt="Ventspils Pilsetas Pasvaldiba" />
+      <a href="#"><img src="img/lrzm.png" alt=" Latvijas Republikas Zemkopības ministrija" /></a>
+      <a href="#"><img src="img/lvm.png" alt=" Latvijas Republikas Zemkopības ministrija" /></a>
+      <a href="#"><img src="img/gibson.png" alt="Gibson International" /></a>
+      <a href="#"><img src="img/businessbuilder.png" alt="Business Builder" /></a>
+      <a href="#"><img src="img/balticforestry.png" alt="Baltic Sustainable Forestry" /></a>
+      <a href="#"><img src="img/statoil.png" alt="Statoil" /></a>
+      <a href="#"><img src="img/casamona.png" alt="Casamona" /></a>
+      <a href="#"><img src="img/blueroots.png" alt="Blue Roots" /></a>
+      <a href="#"><img src="img/lvc.png" alt="Latvijas Valsts Celi" /></a>
+      <a href="#"><img src="img/latvenergo.png" alt="Latvenergo" /></a>
+      <a href="#"><img src="img/filterline.png" alt="Filter Line" /></a>
+      <a href="#"><img src="img/lmt.png" alt="LMT" /></a>
+      <a href="#"><img src="img/brivosta.png" alt="Ventspils Brivosta" /></a>
+      <a href="#"><img src="img/ventbunkers.png" alt="Vent Bunkers" /></a>
+      <a href="#"><img src="img/latio.png" alt="Latio" /></a>
+      <a href="#"><img src="img/ventpasvaldiba.png" alt="Ventspils Pilsetas Pasvaldiba" /></a>
     </section><!-- Klienti -->
 
 

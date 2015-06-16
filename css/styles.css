@@ -13,9 +13,9 @@ body {
 
 
 .container {
-  width: 1294px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 
@@ -54,14 +54,14 @@ header {
 
 .logo {
   position: relative;
-  padding: 0;
+  padding: 22px 0;
   top: 10px;
+  float: left;
 }
 
 
 .main-nav {
-  width: 93%;
-  float: left;
+  float: right;
   padding: 22px 25px 22px 0;
 }
 
@@ -70,7 +70,7 @@ header {
   display: inline-block;
   float: right;
   border-right: 1px solid #fff;
-  padding: 0 20px 0 0;
+  padding: 0 20px 0 0px;
 }
 
 
@@ -92,7 +92,6 @@ header {
 
 
 .lang-nav {
-  width: 7%;
   float: right;
   padding: 22px 0;
 }
@@ -159,14 +158,22 @@ header {
 
 .header-brand {
   float: left;
-  padding: 0 0 0 50px;
-  width: 360px;
+  padding: 0 0 0 70px;
+  width: 380px;
 }
 
 
-.right-arrow, .left-arrow {
-  position: relative;
+.right-arrow {
+  position: absolute;
   top: 30px;
+  left: 1125px;
+}
+
+
+.left-arrow {
+  position: absolute;
+  top: 30px;
+  left: 50px;
 }
 
 
@@ -216,7 +223,7 @@ header {
 }
 
 
-/* Common classes */
+/* Common classes for grid */
 
 
 .section-heading {
@@ -225,18 +232,29 @@ header {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px dashed #000;
-  padding: 0 0 10px 0;
+  padding: 10px 0 20px 0;
 }
 
 
-.col-3 {
+.row {
+  display: flex;
+  padding: 30px 0 30px 0;
+}
+
+
+.cols {
   display: inline-block;
-  float: left;
-  width: 33%;
+  flex: 1;
+  padding: 10px;
 }
 
 
-/* Services */
+/* Services section */
+
+
+.services {
+  display: flex;
+}
 
 
 .services h3 {
@@ -244,6 +262,7 @@ header {
   color: #473A15;
   text-transform: uppercase;
   display: inline-block;
+  margin: 0;
 }
 
 
@@ -251,5 +270,44 @@ header {
   list-style: none;
   line-height: 1.5;
   color: #534C38;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 0;
+  margin: 0;
+}
+
+
+.services-image {
+  display: inline-block;
+  flex: 1;
+}
+
+
+.services-list {
+  display: inline-block;
+  flex: 4;
+}
+
+
+.services-list li {
+  padding: 20px 0;
+}
+
+
+.services-list li:not(:last-child):after {
+  content: '';
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 60px;
+  top: 20px;
+  background-color: #BBB7AB;
+  border-right: 1px white;
+}
+
+
+/* Services Prices section */
+
+
+.services-prices {
+  color: #534C38;
+  line-height: 2;
 }
