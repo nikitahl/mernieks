@@ -12,6 +12,9 @@ body {
 }
 
 
+/* Reusable classe for container */
+
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -179,6 +182,8 @@ header {
 
 
 /* Slider navigation thumbnails */
+
+
 .nav-thumbs {
   position: absolute;
   clear:both;
@@ -224,7 +229,7 @@ header {
 }
 
 
-/* Common classes for grid */
+/* Reusable classes for grid */
 
 
 .section-heading {
@@ -238,24 +243,42 @@ header {
 }
 
 
-.row {
-  display: flex;
-  padding: 20px 0 30px 0;
+.section-heading-dark {
+  font-weight: normal;
+  color: #C7A457;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px dashed #C7A457;
+  padding: 10px 0 20px 0;
+  margin-bottom: 0;
 }
 
 
-.cols {
-  display: inline-block;
+.row {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.cols-1 {
   flex: 1;
 }
 
 
-/* Services section */
-
-
-.services {
-  display: flex;
+.cols-2 {
+  flex: 2;
 }
+
+.cols-3 {
+  flex: 3;
+}
+
+.cols-4 {
+  flex: 4;
+}
+
+
+/* Services section */
 
 
 .services h3 {
@@ -278,13 +301,11 @@ header {
 
 .services-image {
   display: inline-block;
-  flex: 1;
 }
 
 
 .services-list {
   display: inline-block;
-  flex: 3;
 }
 
 
@@ -308,7 +329,7 @@ header {
 .wrapper {
   background: url(../img/fons.png) no-repeat center;
   background-size: cover;
-  padding: 40px 0 30px 0;
+  padding: 60px 0 30px 0;
 }
 
 /* Services Prices section */
@@ -327,4 +348,211 @@ header {
 
 .left-indent {
   margin: 0 0 0 30px;
+}
+
+
+.pricing-tables {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.pricing-tables-border {
+  border-bottom: 1px solid #DFD9CF;
+}
+
+
+.pricing-tables tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+
+.pricing-tables tr td:nth-child(1) {
+  font-size: .8em;
+}
+
+
+.pricing-tables tr th:nth-child(1) {
+  font-size: .8em;
+  text-align: left;
+}
+
+
+.pricing-tables tbody tr:nth-of-type(2n+1) {
+  background-color: #F2EBE1;
+}
+
+
+/* About */
+
+
+.about {
+  background-color: #836744;
+}
+
+
+.about p {
+  color: #fff;
+  margin: 20px auto;
+  line-height: 2;
+}
+
+
+.profile {
+  text-align: center;
+}
+
+
+.profile h4 {
+  font-size: 2em;
+  font-weight: normal;
+  color: #C7A457;
+  border-bottom: 1px solid #876F51;
+  padding: 20px 30px 20px 30px;
+  margin: 0;
+}
+
+
+.profile ul {
+  list-style: none;
+  color: #C7A457;
+  padding: 0;
+}
+
+
+.certificates {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+}
+
+
+.certificates p {
+  flex: 3;
+  font-size: .7em;
+  margin: 0;
+}
+
+
+.certificates img {
+  flex: 1;
+}
+
+
+.edgars {
+  border-radius: 50%;
+}
+
+
+/* Clients */
+
+
+.clients {
+  padding: 40px 0 0 0;
+}
+
+
+.clients-line {
+  text-align: justify;
+}
+
+
+.clients-line img {
+	width: auto;
+	display: inline-block;
+	vertical-align: top;
+  padding: 0 0 50px 0;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+}
+
+
+.clients-line:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+
+/* Contacts */
+
+
+.contacts {
+  background-color: #7B6345;
+}
+
+
+.contacts .row {
+  padding: 50px 0 100px 0;
+}
+
+
+.contact-info {
+  text-align: center;
+}
+
+
+.contact-info ul {
+  padding: 0 20px;
+  list-style: none;
+  color: #C7A457;
+  line-height: 2;
+}
+
+
+.contact-info ul li:nth-child(2), legend {
+  color: #EACC8B;
+}
+
+
+.contacts fieldset {
+  border: none;
+  padding: 0;
+}
+
+
+.contacts legend {
+  text-transform: uppercase;
+  padding: 0 0 15px 0;
+}
+
+
+.contacts input, textarea {
+  border: none;
+  margin: 0 0 20px 0;
+}
+
+
+.contacts textarea {
+  width: 100%;
+}
+
+
+.contacts input[type="text"], input[type="email"] {
+  width: 48%;
+}
+
+
+.contacts input[type="text"], input[type="email"], textarea {
+  background-color: #7F6C42;
+  font-size: .8em;
+  color: #A28954;
+  padding: 7px;
+}
+
+.contacts input[type="button"] {
+  background-color: #B1965C;
+  padding: 10px 25px;
+  color: #fff;
+}
+
+
+.contacts input[type="text"] {
+  float: left;
+}
+
+
+.contacts input[type="email"] {
+  float: right;
 }
