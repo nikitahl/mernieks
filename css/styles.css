@@ -12,10 +12,17 @@ body {
 }
 
 
-/* Reusable classe for container */
+/* Reusable classes for container */
 
 
 .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px 50px;
+}
+
+
+.container-heading {
   width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
@@ -52,7 +59,7 @@ header {
 }
 
 
-/* Main nav*/
+/* Main nav */
 
 
 .logo {
@@ -238,8 +245,8 @@ header {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px dashed #000;
-  padding: 10px 0 20px 0;
-  margin-bottom: 0;
+  padding: 30px 0 20px 0;
+  margin: 0;
 }
 
 
@@ -249,32 +256,28 @@ header {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px dashed #C7A457;
-  padding: 10px 0 20px 0;
-  margin-bottom: 0;
+  padding: 30px 0 20px 0;
+  margin: 0;
 }
 
 
 .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
 .cols-1 {
-  flex: 1;
-}
-
-
-.cols-2 {
-  flex: 2;
-}
-
-.cols-3 {
-  flex: 3;
-}
-
-.cols-4 {
-  flex: 4;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 
@@ -300,12 +303,13 @@ header {
 
 
 .services-image {
-  display: inline-block;
+  float: left;
 }
 
 
 .services-list {
-  display: inline-block;
+  overflow: hidden;
+  padding: 0 30px;;
 }
 
 
@@ -329,8 +333,9 @@ header {
 .wrapper {
   background: url(../img/fons.png) no-repeat center;
   background-size: cover;
-  padding: 60px 0 30px 0;
+  padding: 50px 0 0 0;
 }
+
 
 /* Services Prices section */
 
@@ -383,7 +388,7 @@ header {
 }
 
 
-/* About */
+/* About section */
 
 
 .about {
@@ -408,8 +413,9 @@ header {
   font-weight: normal;
   color: #C7A457;
   border-bottom: 1px solid #876F51;
-  padding: 20px 30px 20px 30px;
-  margin: 0;
+  padding: 20px 0;
+  margin: 0px auto;
+  width: 60%;
 }
 
 
@@ -420,21 +426,34 @@ header {
 }
 
 
+.profiles-wrapper {
+  margin: 50px 0 0 0;
+}
+
+
 .certificates {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 
 
 .certificates p {
-  flex: 3;
-  font-size: .7em;
+  font-size: .8em;
   margin: 0;
+  text-align: left;
+  padding: 0 0 0 10px;
+  line-height: normal;
+  overflow: hidden;
 }
 
 
 .certificates img {
-  flex: 1;
+  float: left;
+}
+
+
+.inner {
+  width: 50%;
 }
 
 
@@ -443,10 +462,15 @@ header {
 }
 
 
-/* Clients */
+/* Clients section */
 
 
-.clients {
+.clients .container {
+  padding-bottom: 0;
+}
+
+
+.banners {
   padding: 40px 0 0 0;
 }
 
@@ -460,7 +484,7 @@ header {
 	width: auto;
 	display: inline-block;
 	vertical-align: top;
-  padding: 0 0 50px 0;
+  padding: 0 0 30px 0;
 
 	/* IE fix. */
 	*display: inline;
@@ -475,7 +499,17 @@ header {
 }
 
 
-/* Contacts */
+.uptop {
+  display: inline-block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 15px;
+  right: 20px;
+  bottom: 20px;
+}
+
+
+/* Contacts section */
 
 
 .contacts {
@@ -484,7 +518,7 @@ header {
 
 
 .contacts .row {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 0 0;
 }
 
 
@@ -545,6 +579,7 @@ header {
   background-color: #B1965C;
   padding: 10px 25px;
   color: #fff;
+  cursor: pointer;
 }
 
 
