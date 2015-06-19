@@ -7,12 +7,11 @@ body {
   background-color: #F4EEDF;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  font-weight: lighter;
   margin: 0;
 }
 
 
-/* Reusable classes for container */
+/* Reusable classes for container and clearfix */
 
 
 .container {
@@ -55,7 +54,6 @@ header {
 
 .navbar {
   background-color: #473a2d;
-  color: #fff;
 }
 
 
@@ -63,10 +61,8 @@ header {
 
 
 .logo {
-  position: relative;
-  padding: 22px 0;
-  top: 10px;
   float: left;
+  margin: 30px 0 0 0;
 }
 
 
@@ -78,7 +74,6 @@ header {
 
 .main-nav-links {
   display: inline-block;
-  float: right;
   border-right: 1px solid #fff;
   padding: 0 20px 0 0px;
 }
@@ -89,7 +84,6 @@ header {
   color: #fff;
   text-decoration: none;
   padding: 20px;
-  vertical-align: middle;
 }
 
 
@@ -157,16 +151,6 @@ header {
 }
 
 
-.right-arrow {
-  float: right;
-}
-
-
-.left-arrow {
-  float: left;
-}
-
-
 .header-brand {
   float: left;
   padding: 0 0 0 70px;
@@ -175,6 +159,7 @@ header {
 
 
 .right-arrow {
+  float: right;
   position: absolute;
   top: 30px;
   left: 1125px;
@@ -182,6 +167,7 @@ header {
 
 
 .left-arrow {
+  float: left;
   position: absolute;
   top: 30px;
   left: 50px;
@@ -192,25 +178,14 @@ header {
 
 
 .nav-thumbs {
-  position: absolute;
-  clear:both;
-  bottom:15px;
-  left:42%;
+  margin: 0px auto;
+  width: 10%;
+  position: relative;
+  top: 320px;
 }
 
 
-.nav-thumbs ul {
-  list-style-type: none;
-}
-
-
-.nav-thumbs ul li {
-  float:left;
-  margin-top:20px;
-}
-
-
-.nav-thumbs ul li a {
+.nav-thumbs a {
     box-sizing: content-box;
     display:block;
     width:10px;
@@ -226,7 +201,7 @@ header {
 }
 
 
-.nav-thumbs ul li a:hover, .nav-thumbs ul li a.active {
+.nav-thumbs a:hover, .nav-thumbs a.active {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
