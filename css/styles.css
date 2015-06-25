@@ -4,7 +4,7 @@
 
 
 body {
-  background-color: #F4EEDF;
+  background-color: #f4eeDf;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   margin: 0;
@@ -88,7 +88,7 @@ header {
 
 
 .main-nav-links a:hover {
-  background-color: #5B4D3B;
+  background-color: #5b4d3b;
 }
 
 
@@ -117,32 +117,42 @@ header {
 
 
 .lang-nav-links a:hover {
-  background-color: #5B4D3B;
+  background-color: #5b4d3b;
 }
 
 
 /* Header main section */
 
 
-.header-brand h1, .header-brand p {
+.header-brand {
+  float: left;
+  padding: 0;
+  margin: 0 0 0 90px;
+  width: 310px;
+}
+
+
+.header-brand h1,
+.header-brand p {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   font-weight: normal;
   display: inline-block;
-  line-height: 1.5            ;
+  line-height: 1.5;
   margin: 0 0 20px 0;
 }
 
 
 .header-content {
   position: relative;
-  top: 250px;
+  top: 270px;
 }
 
 
 .left-arrow, .right-arrow, .header-brand {
   display: inline-block;
+  position: absolute;
 }
 
 
@@ -151,16 +161,8 @@ header {
 }
 
 
-.header-brand {
-  float: left;
-  padding: 0 0 0 70px;
-  width: 380px;
-}
-
-
 .right-arrow {
   float: right;
-  position: absolute;
   top: 30px;
   left: 1125px;
 }
@@ -168,7 +170,6 @@ header {
 
 .left-arrow {
   float: left;
-  position: absolute;
   top: 30px;
   left: 50px;
 }
@@ -179,9 +180,9 @@ header {
 
 .nav-thumbs {
   margin: 0px auto;
-  width: 10%;
-  position: relative;
-  top: 320px;
+  position: absolute;
+  top: 280px;
+  left: 48%;
 }
 
 
@@ -192,16 +193,17 @@ header {
     height:10px;
     float: left;
     margin:0 5px;
-    background-color: #AF926D;
+    background-color: #af926d;
     text-indent: -9999px;
-    border: 2px solid #AF926D;
+    border: 2px solid #af926d;
     border-radius: 10px;
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
 }
 
 
-.nav-thumbs a:hover, .nav-thumbs a.active {
+.nav-thumbs a:hover,
+.nav-thumbs a.active {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -216,7 +218,7 @@ header {
 
 .section-heading {
   font-weight: normal;
-  color: #91752C;
+  color: #91752c;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px dashed #000;
@@ -227,13 +229,29 @@ header {
 
 .section-heading-dark {
   font-weight: normal;
-  color: #C7A457;
+  color: #c7a457;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 1px dashed #C7A457;
+  border-bottom: 1px dashed #c7a457;
   padding: 30px 0 20px 0;
   margin: 0;
 }
+
+
+
+.col-1-2 {
+  float: left;
+  width: 50%;
+}
+
+
+.col-1-3 {
+  float: left;
+  width: 33.333%;
+}
+
+
+/* Flexbox */
 
 
 .row {
@@ -261,7 +279,7 @@ header {
 
 .services h3 {
   font-weight: normal;
-  color: #473A15;
+  color: #473a15;
   text-transform: uppercase;
   display: inline-block;
   margin: 0;
@@ -271,9 +289,14 @@ header {
 .services ul {
   list-style: none;
   line-height: 1.5;
-  color: #534C38;
-  padding: 0 10px 0 0;
+  color: #534c38;
+  padding: 0;
   margin: 0;
+}
+
+
+.services:not(:first-child) {
+  padding: 0 0 0 30px;
 }
 
 
@@ -284,12 +307,13 @@ header {
 
 .services-list {
   overflow: hidden;
-  padding: 0 30px;;
+  padding: 0 0 0 20px;
 }
 
 
 .services-list li {
   padding: 20px 0;
+  font-size: .9em;
 }
 
 
@@ -300,7 +324,7 @@ header {
   height: 1px;
   width: 60px;
   top: 20px;
-  background-color: #BBB7AB;
+  background-color: #bbb7ab;
   border-right: 1px white;
 }
 
@@ -316,18 +340,18 @@ header {
 
 
 .services-prices {
-  color: #534C38;
+  color: #534c38;
   line-height: 2;
 }
 
 
 .right-indent {
-  margin: 0 30px 0 0;
+  padding: 0 30px 0 0;
 }
 
 
 .left-indent {
-  margin: 0 0 0 30px;
+  padding: 0 0 0 30px;
 }
 
 
@@ -338,7 +362,7 @@ header {
 
 
 .pricing-tables-border {
-  border-bottom: 1px solid #DFD9CF;
+  border-bottom: 1px solid #dFd9cf;
 }
 
 
@@ -359,7 +383,7 @@ header {
 
 
 .pricing-tables tbody tr:nth-of-type(2n+1) {
-  background-color: #F2EBE1;
+  background-color: #f2ebe1;
 }
 
 
@@ -386,8 +410,8 @@ header {
 .profile h4 {
   font-size: 2em;
   font-weight: normal;
-  color: #C7A457;
-  border-bottom: 1px solid #876F51;
+  color: #c7a457;
+  border-bottom: 1px solid #876f51;
   padding: 20px 0;
   margin: 0px auto;
   width: 60%;
@@ -396,8 +420,9 @@ header {
 
 .profile ul {
   list-style: none;
-  color: #C7A457;
+  color: #c7a457;
   padding: 0;
+  margin: 15px 0 30px 0;
 }
 
 
@@ -429,6 +454,7 @@ header {
 
 .inner {
   width: 50%;
+  padding: 0 0 0 20px;
 }
 
 
@@ -464,11 +490,19 @@ header {
 	/* IE fix. */
 	*display: inline;
 	zoom: 1;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+.clients-line img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 
 .clients-line:after {
-	content: "";
+	content: '';
 	width: 100%;
 	display: inline-block;
 }
@@ -487,8 +521,13 @@ header {
 /* Contacts section */
 
 
+.wrapper-contacts {
+  padding: 50px 0 0 0;
+}
+
+
 .contacts {
-  background-color: #7B6345;
+  background-color: #7b6345;
 }
 
 
@@ -499,19 +538,21 @@ header {
 
 .contact-info {
   text-align: center;
+  font-size: .9em;
+  margin: 20px 0 0 0;
 }
 
 
 .contact-info ul {
   padding: 0 20px;
   list-style: none;
-  color: #C7A457;
+  color: #c7a457;
   line-height: 2;
 }
 
 
 .contact-info ul li:nth-child(2), legend {
-  color: #EACC8B;
+  color: #eacc8b;
 }
 
 
@@ -524,6 +565,7 @@ header {
 .contacts legend {
   text-transform: uppercase;
   padding: 0 0 15px 0;
+  font-size: 0.8em;
 }
 
 
@@ -544,14 +586,14 @@ header {
 
 
 .contacts input[type="text"], input[type="email"], textarea {
-  background-color: #7F6C42;
+  background-color: #7f6c42;
   font-size: .8em;
-  color: #A28954;
+  color: #a28954;
   padding: 7px;
 }
 
 .contacts input[type="button"] {
-  background-color: #B1965C;
+  background-color: #b1965c;
   padding: 10px 25px;
   color: #fff;
   cursor: pointer;
