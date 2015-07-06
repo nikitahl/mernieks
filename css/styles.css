@@ -151,20 +151,16 @@ body {
 .lang-nav {
   float: right;
   padding: 0;
-  margin: 26px 0 26px 34px;
+  margin: 26px 0 26px 25px;
   font-size: 13px;
 }
 
 
 .lang-nav-links a {
   vertical-align: middle;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
-
-.lang-nav-links a:not(:last-child) {
-  margin: 0 10px 0 0;
-}
 
 
 /* Header */
@@ -172,7 +168,7 @@ body {
 
 header {
   position: relative;
-  height: 690px;
+  height: 689px;
   background: url(../img/bilde1.png) no-repeat center;
   background-size: cover;
   box-shadow: 0 1px 2px 1px #888;
@@ -223,7 +219,6 @@ header .container {
 
 
 .left-arrow, .right-arrow, .header-brand {
-  display: inline-block;
   position: absolute;
 }
 
@@ -257,7 +252,7 @@ header .container {
 
 .nav-thumbs a {
     box-sizing: content-box;
-    display: inline-block;
+    display: inline-block; /* ! to display link as circles*/
     width: 10px;
     height: 10px;
     margin: 0 3px;
@@ -458,6 +453,12 @@ header .container {
 }
 
 
+.profile img {
+  width: 166px;
+  height: 167px;
+}
+
+
 .profile h4 {
   font-size: 32px;
   font-weight: normal;
@@ -469,11 +470,21 @@ header .container {
 }
 
 
-.profile ul {
-  list-style: none;
-  color: #c7a457;
+.profile address {
   padding: 0;
   margin: 7px 0px 25px;
+  font-style: normal;
+}
+
+
+.profile address a {
+  color: #c7a457;
+  text-decoration: none;
+}
+
+
+.profile address a:hover {
+  text-decoration: underline;
 }
 
 
@@ -487,33 +498,22 @@ header .container {
 .certificates {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 20px 20px 0;
-  overflow: hidden;
+  text-align: center;
+
 }
 
 
-.certificates p {
+.certificates li {
   font-size: 13px;
-  margin: 0;
+  color: #fff;
+  margin: 0 0 20px 0;
   text-align: left;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 70px;
   line-height: normal;
-  overflow: hidden;
-}
-
-
-.certificates img {
-  float: left;
-}
-
-
-.certificates div {
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-
-.certificates .col-1-2:nth-of-type(odd) {
-  padding-left: 40px;
+  width: 49%;
+  display: inline-block;
+  background: url(../img/sertif.png) no-repeat 35px center;
+  background-size: contain;
 }
 
 
@@ -569,22 +569,12 @@ header .container {
 }
 
 
-.uptop {
-  display: inline-block;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 14px 10px;
-  right: -32px;
-  bottom: 35px;
-}
-
-
 /* Contacts section */
 
 
 .wrapper-contacts {
   overflow: auto;
-  margin: 35px 0px 50px;
+  margin: 35px 0px 65px;
 }
 
 
@@ -598,21 +588,34 @@ header .container {
 
 .contact-info {
   text-align: center;
-  font-size: 15.2px;
+  font-size: 15px;
   margin-top: 14px;
+  line-height: 4
 }
 
 
-.contact-info ul {
+.contact-info address {
   padding: 0 20px;
-  list-style: none;
   color: #c7a457;
   line-height: 1.9;
+  font-style: normal;
 }
 
 
-.contact-info ul li:nth-child(2), legend {
+.contact-info address a {
+  text-decoration: none;
+}
+
+
+.contact-info span,
+span a,
+legend {
   color: #eacc8b;
+}
+
+
+.footer-mailto a {
+  color: #c7a457;
 }
 
 
@@ -624,14 +627,14 @@ header .container {
 
 .contacts legend {
   text-transform: uppercase;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   font-size: 14px;
 }
 
 
 .contacts input, textarea {
   border: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px;
 }
 
 
@@ -647,9 +650,9 @@ header .container {
 
 .contacts input[type="text"], input[type="email"], textarea {
   background-color: #7f6c42;
-  font-size: .8em;
+  font-size: 11px;
   color: #a28954;
-  padding: 7px;
+  padding: 10px;
 }
 
 .contacts input[type="button"] {
@@ -677,4 +680,17 @@ header .container {
 
 .location {
   border: 7px solid #c7a457;
+}
+
+
+/* Up button */
+
+
+.uptop {
+  display: inline-block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 14px 10px;
+  right: 32px;
+  bottom: 35px;
 }
