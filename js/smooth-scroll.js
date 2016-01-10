@@ -12,7 +12,7 @@
         if ( documentBody.scrollTop > 500 ) {
           _this.toTopBtn.classList.remove("is-hidden-btn");
         } else {
-          _this.toTopBtn.classList.add("is-hidden-btn");
+          _this.hideToTopBtn();
         }
       }
     },
@@ -28,15 +28,22 @@
         el = Array.prototype.slice.call(el), // convert nodelist to array
         scrollY = 0,
       	distance = 40, //amount of pixels being scrolled during animation
-      	speed = 25;
+      	speed = 10,
+        assignFunction = function(funcType) {
+          el[i].addEventListener( "click", function(e){
+            e.preventDefault();
+            funcType.call(this);
+          });
+        };
 
     for (i = 0; i < el.length; i++ ) { //assign every link an event with function
-      el[i].addEventListener( "click", function(e){
-        console.dir(e);
-        e.preventDefault();
-        scrollToEl.call(this);
+      var toTop = el[i].getAttribute("href");
+      // console.log(toTop);
+      if ( toTop === "#home" ) {
+        assignFunction(scrollToTop);
+      } else {
+        assignFunction(scrollToEl);
       }
-       );
     }
 
     function scrollToEl() {
@@ -53,7 +60,6 @@
             } else {
               if (currentY < targetY - distance) {
                 scrollY = currentY + distance;
-                console.log('scrollY:' + scrollY);
                 window.scroll(0, scrollY);
                 animator = setTimeout(performScroll, speed);
               } else {
@@ -63,7 +69,27 @@
         }
         performScroll();
       }
+
+      function scrollToTop() {
+        var trigger = this.getAttribute("href"),
+            targetEl = document.querySelector(trigger);
+        function performScroll() {
+          var currentY = window.pageYOffset,
+              targetY = targetEl.offsetTop,
+              animator = setTimeout(performScroll, speed);
+              // console.log(targetY);
+          if(currentY > targetY){
+            scrollY = currentY - distance;
+            window.scroll(0, scrollY);
+          } else {
+            clearTimeout(animator);
+          }
+        }
+        performScroll();
+      }
+
   }
+
   SmoothScroll();
 
 })()
