@@ -28,10 +28,15 @@
         el = Array.prototype.slice.call(el), // convert nodelist to array
         scrollY = 0,
       	distance = 40, //amount of pixels being scrolled during animation
-      	speed = 5000;
+      	speed = 25;
 
     for (i = 0; i < el.length; i++ ) { //assign every link an event with function
-      el[i].addEventListener( "click", scrollToEl );
+      el[i].addEventListener( "click", function(e){
+        console.dir(e);
+        e.preventDefault();
+        scrollToEl.call(this);
+      }
+       );
     }
 
     function scrollToEl() {
@@ -42,48 +47,23 @@
             targetY = targetEl.offsetTop, //returns the distance of the current element relative to the top of the offsetParent node.
             bodyHeight = document.body.offsetHeight, //returns the viewable height of an element (body) in pixels
             yPos = currentY + window.innerHeight, //returns currentY + the inner height of a window's content area
-            animator = setTimeout(performScroll, speed);
-
-            console.log('------------------');
-            console.log('targetY:' + targetY);
-            console.log('currentY:' + currentY);
-            console.log('bodyHeight:' + bodyHeight);
-            console.log('yPos:' + yPos);
-            console.log('distance:' + distance);
-
-            // console.log(targetY);
-            //console.log(yPos);
+            animator;
             if (yPos > bodyHeight) { //check if scroll is larger than the page height
               clearTimeout(animator);
             } else {
               if (currentY < targetY - distance) {
-                // console.log(currentY);
-                // console.log(targetY);
-                // console.log(targetY - distance);
                 scrollY = currentY + distance;
                 console.log('scrollY:' + scrollY);
-                window.scrollTo(0, scrollY);
+                window.scroll(0, scrollY);
+                animator = setTimeout(performScroll, speed);
               } else {
                  clearTimeout(animator);
               }
             }
-            console.log('===================');
-            // console.log("---------------------");
-            // console.log(currentY);
         }
         performScroll();
-        return false;
       }
   }
   SmoothScroll();
 
 })()
-
-// var go = function() {
-//   setTimeout(this.go, 90);
-//   window.scrollBy(0, -100);
-//   el.offsetTop
-//
-// }
-//
-// go();
