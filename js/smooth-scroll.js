@@ -55,7 +55,7 @@
             bodyHeight = document.body.offsetHeight, //returns the viewable height of an element (body) in pixels
             yPos = currentY + window.innerHeight, //returns currentY + the inner height of a window's content area
             animator;
-            if (yPos > bodyHeight) { //check if scroll is larger than the page height
+            if (yPos >= bodyHeight) { //check if scroll is larger than the page height
               clearTimeout(animator);
             } else {
               if (currentY < targetY - distance) {
