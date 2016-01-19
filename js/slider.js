@@ -76,9 +76,25 @@ var slider = {
   },
   autoPlay: function() {
     var _this = this,
-    play = setInterval(function() {
-      _this.showNextAuto()
-    }, 5000);
+        slide = document.getElementById("slider"),
+        play = setInterval(playSlides, 2500);
+
+    function playSlides() {
+      _this.showNextAuto();
+    }
+
+    function pauseSlider() {
+      clearInterval(play);
+    }
+
+    function startSlider() {
+      play = setInterval(playSlides, 2500);
+    }
+
+    slide.addEventListener( 'mouseenter', pauseSlider );
+    slide.addEventListener( 'mouseleave', startSlider );
+
+
   },
   activeIndex: function() {
     var _this = this;

@@ -158,7 +158,8 @@ body {
   width: 100%;
   height: 100%;
   box-shadow: 0 1px 2px 1px #888;
-  display: none;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .site-headline,
@@ -647,7 +648,7 @@ legend {
 }
 
 .is-active-slide {
-  display: block;
+  opacity: 1;
 }
 
 .is-active-thumb {
